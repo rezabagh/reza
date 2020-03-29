@@ -1,4 +1,5 @@
 service IBSng stop
+cd /var/lib/pgsql
 su - postgres << EOF
 dropdb IBSng
 createdb IBSng

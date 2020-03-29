@@ -1,6 +1,6 @@
 service IBSng stop
 cd /var/lib/pgsql
-read -r -p "Put The Remote server IP ADDRESS: Ex. 178.33.14.218" -e -i "xxx.xxx.xxx.xxx" IPADDRESS
+read -r -p "Put The remote server IP Address of IBSng.sql; Ex. 178.33.14.218:  " -e -i "xxx.xxx.xxx.xxx" IPADDRESS
 wget -N http://$IPADDRESS/IBSng.sql
 su - postgres << EOF
 dropdb IBSng

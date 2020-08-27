@@ -1,0 +1,14 @@
+[Unit]
+Description=Shadowsocks Custom Client Service.
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/etc/shadowvpn/outline-ss-server -config /etc/shadowvpn/config.yml -metrics=127.0.0.1:70
+ExecStop=killall -9 outline-ss-server
+KillMode=control-group
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,35 @@
+#!/bin/sh
+# chkconfig: 2345 99 01
+# description: ShadowVPN
+shadowvpn=""
+shadowvpn_locations="/etc/shadowvpn/outline-ss-server"
+for location in $shadowvpn_locations
+do
+  if [ -f "$location" ]
+  then
+    shadowvpn=$location
+  fi
+done
+
+# Our working directory
+work=/etc/shadowvpn/
+
+case "$1" in
+start)
+$shadowvpn -config $work/config.yml -metrics=127.0.0.1:70
+;;
+stop)
+killall outline-ss-server
+rm -rf /root/nohup.out
+;;
+restart)
+killall outline-ss-server
+rm -rf /root/nohup.out
+sleep 3
+$shadowvpn -config $work/config.yml -metrics=127.0.0.1:70
+;;
+*)
+echo "Usage: $0 {start|stop|restart}"
+exit 1
+esac
+exit 0

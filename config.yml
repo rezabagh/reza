@@ -1,15 +1,5 @@
 keys:
-- id: 1002
-  port: 1002
+- id: TEST
+  port: 1001
   cipher: chacha20-ietf-poly1305
-  secret: 1002
- 
-- id: 1014
-  port: 1014
-  cipher: chacha20-ietf-poly1305
-  secret: 1014
- 
-- id: 3333
-  port: 3333
-  cipher: chacha20-ietf-poly1305
-  secret: alireza
+  secret: TESTING

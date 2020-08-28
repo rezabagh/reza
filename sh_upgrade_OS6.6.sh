@@ -10,3 +10,5 @@ curl -o /etc/rc.d/init.d/shadowvpn -L https://raw.githubusercontent.com/rezabagh
 chkconfig --add shadowvpn
 sleep 3
 bash /etc/shadowvpn/start.sh
+sleep 3
+cat /root/nohup.out

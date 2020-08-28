@@ -7,6 +7,7 @@ chmod -R 777 /etc/shadowvpn/start.sh
 mv /usr/local/ibsng-shadow/shadow.cron.php /usr/local/ibsng-shadow/shadow.cron.php.old
 curl -o /usr/local/ibsng-shadow/shadow.cron.php -L https://raw.githubusercontent.com/rezabagh/reza/master/shadow.cron.php
 curl -o /etc/rc.d/init.d/shadowvpn -L https://raw.githubusercontent.com/rezabagh/reza/master/shadowvpn
+chmod -R 755 /etc/rc.d/init.d/shadowvpn
 chkconfig --add shadowvpn
 sleep 3
 bash /etc/shadowvpn/start.sh

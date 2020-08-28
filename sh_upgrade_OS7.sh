@@ -1,5 +1,4 @@
 yum -y install psmisc
-yum -y install go
 curl -o /etc/shadowvpn/outline-ss-server -L https://raw.githubusercontent.com/rezabagh/reza/master/outline-ss-server
 chmod -R 777 /etc/shadowvpn/outline-ss-server
 curl -o /etc/shadowvpn/config.yml -L https://raw.githubusercontent.com/rezabagh/reza/master/config.yml

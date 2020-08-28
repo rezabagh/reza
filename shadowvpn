@@ -12,7 +12,7 @@ do
 done
 
 # Our working directory
-work=/etc/shadowvpn/
+work=/etc/shadowvpn
 
 case "$1" in
 start)

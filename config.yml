@@ -1,5 +1,5 @@
 keys:
-- id: TEST
-  port: 1001
+- id: OutLine Shadowsocks
+  port: 8897
   cipher: chacha20-ietf-poly1305
-  secret: TESTING
+  secret: kws4mzp8

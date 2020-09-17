@@ -9,7 +9,7 @@ rm -rf /etc/systemd/system/socks5.service
 rm -rf /etc/brook/brook
 curl -L https://github.com/txthinking/brook/releases/download/v20200909/brook_linux_amd64 -o /etc/brook/brook
 chmod +x /etc/brook/brook
-curl -o /etc/systemd/system/wsserver.service -L https://raw.githubusercontent.com/rezabagh/reza/master/wsserver
+curl -o /etc/systemd/system/wsserver.service -L https://raw.githubusercontent.com/rezabagh/reza/master/wsserver.service
 curl -o /etc/systemd/system/brook.service -L https://raw.githubusercontent.com/rezabagh/reza/master/brook.service
 curl -o /etc/systemd/system/socks5.service -L https://raw.githubusercontent.com/rezabagh/reza/master/socks5.service
 systemctl daemon-reload

@@ -1,0 +1,8 @@
+systemctl stop shadowsocks.service 
+systemctl mask shadowsocks.service 
+curl -L https://github.com/txthinking/brook/releases/download/v20200909/brook_linux_amd64 -o /etc/brook/brook
+chmod +x /etc/brook/brook
+systemctl daemon-reload
+systemctl restart streambrook.service
+systemctl restart brook.service
+systemctl restart socks5.service

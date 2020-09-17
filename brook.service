@@ -1,0 +1,15 @@
+[Unit]
+Description=Brook is a cross-platform(Linux/MacOS/Windows/Android/iOS) proxy software
+
+[Service]
+LimitCORE=infinity
+LimitNOFILE=65536
+LimitNPROC=65530
+LimitSTACK=25600
+ExecStart=/etc/brook/brook server -l :7898 -p kws4mzp8
+KillMode=control-group
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

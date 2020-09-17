@@ -14,6 +14,11 @@ curl -o /etc/systemd/system/brook.service -L https://raw.githubusercontent.com/r
 curl -o /etc/systemd/system/socks5.service -L https://raw.githubusercontent.com/rezabagh/reza/master/socks5.service
 systemctl daemon-reload
 systemctl enable wsserver.service
+sleep 3
+systemctl stop wsserver.service
+systemctl stop brook.service
+systemctl stop socks5.service
+sleep 3
 systemctl restart wsserver.service
 systemctl restart brook.service
 systemctl restart socks5.service

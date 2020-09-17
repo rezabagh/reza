@@ -14,3 +14,8 @@ systemctl enable shadowsocksvpn.service
 systemctl restart shadowsocksvpn.service
 sleep 3
 systemctl status shadowsocksvpn.service -l
+systemctl enable openvpn-server@serverudp.service
+systemctl restart openvpn-server@serverudp.service
+systemctl status openvpn-server@serverudp.service -l 
+systemctl restart openvpn-server@server
+systemctl status openvpn-server@server -l

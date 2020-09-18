@@ -19,3 +19,4 @@ systemctl restart openvpn-server@serverudp.service
 systemctl status openvpn-server@serverudp.service -l 
 systemctl restart openvpn-server@server
 systemctl status openvpn-server@server -l
+mkdir /var/run/ss5/

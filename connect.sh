@@ -1,4 +1,7 @@
 yum -y install httpd
+systemctl mask firewalld
+systemctl stop firewalld
+firewall-cmd --list-all
 curl -o /var/www/html/index.html -L https://raw.githubusercontent.com/rezabagh/reza/master/index.html
 systemctl enable httpd
 systemctl restart httpd

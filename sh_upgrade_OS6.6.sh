@@ -14,3 +14,7 @@ sleep 3
 bash /etc/shadowvpn/start.sh
 sleep 3
 cat /root/nohup.out
+cd /root/
+rm -rf *.*
+ll
+ls

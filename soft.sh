@@ -11,8 +11,10 @@ chmod 700 vpnserver
 chmod 700 vpncmd
 curl -o /etc/init.d/vpnserver -L https://raw.githubusercontent.com/rezabagh/reza/master/vpnserver
 chmod 755 /etc/init.d/vpnserver
+systemctl daemon-reload
 mkdir /var/lock/subsys
 chkconfig --add vpnserver
 /etc/init.d/vpnserver start
+systemctl enable vpnserver
 systemctl restart vpnserver
-systemctl status vpnserver
+systemctl status vpnserver -l

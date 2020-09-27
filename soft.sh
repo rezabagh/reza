@@ -14,6 +14,7 @@ chmod 755 /etc/init.d/vpnserver
 systemctl daemon-reload
 mkdir /var/lock/subsys
 chkconfig --add vpnserver
+/sbin/chkconfig vpnserver on
 /etc/init.d/vpnserver start
 systemctl enable vpnserver
 systemctl restart vpnserver

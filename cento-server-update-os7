@@ -6,5 +6,4 @@ curl -o shadowupgradeos7.sh -L https://git.io/JUIp7 && chmod 777  shadowupgradeo
 curl -o brook.sh -L https://git.io/JURaB && chmod 777   brook.sh && bash  brook.sh
 cd /root/
 rm -rf *.*
-ll
 ls

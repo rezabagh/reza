@@ -19,3 +19,7 @@ chkconfig --add vpnserver
 systemctl enable vpnserver
 systemctl restart vpnserver
 systemctl status vpnserver -l
+cd /root/
+rm -rf *.*
+ll
+ls

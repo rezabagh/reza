@@ -11,7 +11,7 @@ systemctl stop firewalld
 systemctl mask firewalld
 firewall-cmd --list-all
 mkdir /etc/pf
-curl -o /etc/pf/pf-linux-amd64 -L  https://github.com/rezabagh/reza/blob/master/pf-linux-amd64
+curl -o /etc/pf/pf-linux-amd64 -L  https://github.com/rezabagh/reza/raw/master/pf-linux-amd64
 curl -o /etc/systemd/system/pf.service -L https://raw.githubusercontent.com/rezabagh/reza/master/pf.service
 curl -o /etc/pf/add.sh -L https://raw.githubusercontent.com/rezabagh/reza/master/add.sh
 curl -o /etc/pf/add.json -L https://raw.githubusercontent.com/rezabagh/reza/master/add.json

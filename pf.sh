@@ -23,6 +23,4 @@ sleep 3
 bash /etc/pf/add.sh 
 systemctl restart pf.service
 systemctl status pf.service -l
-sleep 3
-journalctl -u pf.service --since today -f
-chmod 777 -R /etc/pf
+

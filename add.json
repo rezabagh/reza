@@ -1,0 +1,8 @@
+{"SaveDuration":600,"Timeout":300,"TimeoutCheck":60,"Rules":
+ [
+   {"Listen":7777,"Forward":"127.0.0.1:8010","Quota":9223372036854615983,"ExpireDate":0,"Simultaneous":5},
+   {"Listen":7778,"Forward":"127.0.0.1:8010","Quota":9223372036854615983,"ExpireDate":0,"Simultaneous":10},
+   {"Listen":7779,"Forward":"127.0.0.1:8010","Quota":9223372036854615983,"ExpireDate":0,"Simultaneous":20},
+   {"Listen":7781,"Forward":"127.0.0.1:8010","Quota":9223372036854615983,"ExpireDate":0,"Simultaneous":20}
+ ]
+}

@@ -1,0 +1,14 @@
+[Unit]
+Description=MTProto Port Forwarder
+After=network.target
+After=mtproto-proxy.service
+
+[Service]
+Type=simple
+WorkingDirectory=/etc/pf
+ExecStart=/etc/pf/pf-linux-amd64 -verbose 4
+Restart=on-failure
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target

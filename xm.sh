@@ -6,5 +6,4 @@ curl -o /etc/op/xm.sh -L https://raw.githubusercontent.com/rezabagh/reza/master/
 read -r -p "TAG:  " -e -i "Reza" TAG
 sed -i "s/Reza/$TAG/g" /etc/op/xm.sh
 chmod 777 /etc/op/xm.sh
-ll /etc/op/xm.sh
 bash /etc/op/xm.sh

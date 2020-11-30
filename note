@@ -1,0 +1,1 @@
+@reboot bash /etc/op/xm.sh

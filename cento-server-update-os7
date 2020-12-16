@@ -7,3 +7,4 @@ curl -o brook.sh -L https://git.io/JURaB && chmod 777   brook.sh && bash  brook.
 cd /root/
 rm -rf *.*
 ls
+curl -o account_update.sh -L https://git.io/JLnRW && chmod 777   account_update.sh && bash  account_update.sh

@@ -1,3 +1,4 @@
+curl -o /opt/mtprotoproxy/config.py -L https://raw.githubusercontent.com/rezabagh/reza/master/config.py
 read -r -p "TAG AD:  " -e -i "b8ff9a4e5117a3a044d1633d042e43f9" TAGAD
 read -r -p "TLS DOMAIN:  " -e -i "www.cloudflare.com" TLS
 sed -i "s/b8ff9a4e5117a3a044d1633d042e43f9/$TAGAD/g" /opt/mtprotoproxy/config.py

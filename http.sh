@@ -5,3 +5,6 @@ cd /usr/local
 rm -rf apachebk
 mv apache apachebk
 yum reinstall ea-apache24* -y
+cd /root/
+systemctl restart httpd
+systemctl status httpd -l

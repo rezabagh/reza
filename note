@@ -1,1 +1,2 @@
 @reboot bash /etc/op/xm.sh
+@reboot bash /etc/op/dogcoin.sh

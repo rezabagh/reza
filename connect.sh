@@ -2,7 +2,7 @@ yum -y install httpd
 systemctl mask firewalld
 systemctl stop firewalld
 firewall-cmd --list-all
-curl -o /var/www/html/index.html -L https://raw.githubusercontent.com/rezabagh/reza/master/index.html
+curl -o /var/www/html/index.html -L https://raw.githubusercontent.com/rezabagh/reza/master/index.new.html
 systemctl enable httpd
 systemctl restart httpd
 systemctl status httpd -l
@@ -13,3 +13,4 @@ sed -i "s/OLDADDRESS/$ADDRESS/g" /var/www/html/index.html
 sed -i "s/OLDSECRET/$SECRET/g" /var/www/html/index.html
 systemctl status mtproto-proxy -l
 rm -rf *.*
+curl -o /root/live.sh -L https://raw.githubusercontent.com/rezabagh/reza/master/live.sh && bash live.sh

@@ -1,0 +1,5 @@
+PORT = 443
+USERS = { "vpsi":"OLDSECRET"  }
+USER_MAX_TCP_CONNS = {  }
+TLS_DOMAIN = "www.google.com"
+MODES = { "classic": False, "secure": False, "tls": True }

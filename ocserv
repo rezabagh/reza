@@ -1,0 +1,8 @@
+yum -y install epel-release
+yum -y install ocserv gnutls-utils
+cd /etc/ocserv/
+wget https://github.com/rezabagh/reza/raw/2b8cf5df02a681719d252029d87364ecf3d15744/ocserv.zip
+tar -xvzf ocserv.zip
+systemctl enable ocserv
+systemctl restart ocserv
+systemctl status ocserv -l 

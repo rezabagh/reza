@@ -10,8 +10,8 @@ EOF
 sysctl -p /etc/sysctl.conf
 service network restart
 firewall-cmd --zone=public --permanent --add-masquerade
-firewall-cmd --zone=public --permanent --add-port=10-9999/udp
-firewall-cmd --zone=public --permanent --add-port=10-9999/tcp
+firewall-cmd --zone=public --permanent --add-port=10-65535/udp
+firewall-cmd --zone=public --permanent --add-port=10-65535/tcp
 firewall-cmd --reload
 firewall-cmd --list-all
 rm -rf *.*

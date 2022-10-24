@@ -1,0 +1,17 @@
+*/2 * * * * php /usr/local/ibsng-shadow/shadow.cron.php >> /usr/local/ibsng-shadow/cornjob.log
+*/2 * * * * php /usr/local/ibsng-IPsec-VPN/IPsec-reload.cron.php >> /usr/local/ibsng-IPsec-VPN/cornjob.log
+*/2 * * * * php /usr/local/ibsng-IKEv2/ikev2-reload.cron.php >> /usr/local/ibsng-IKEv2/cornjob.log
+0 * * * * bash /etc/shadowvpn/start.sh
+*/10 * * * * bash /root/stat-zebedee.sh
+@reboot bash /etc/shadowvpn/start.sh
+@reboot bash /root/stat-zebedee.sh
+
+## error Log clear
+0 * * * * find /var/log/ -type f -delete
+0 0 * * 1,3,5 find /var/log/ -type f -name *.log -delete
+0 0 * * 1,3,5 find /var/log/ -type f -name *.log.* -delete
+0 0 * * 1,3,5 find /usr/local/ibsng-shadow/ -type f -name *.log -delete
+0 0 * * 1,3,5 find /usr/local/ibsng-shadow/ -type f -name *.log.* -delete
+0 0 * * 1,3,5 find /usr/local/ibsng-IPsec-VPN/ -type f -name *.log -delete
+0 0 * * 1,3,5 find /usr/local/ibsng-IPsec-VPN/ -type f -name *.log.* -delete
+0 0 * * 1,3,5 find /etc/ipsec-reload/ -type f -name *.log.* -delete

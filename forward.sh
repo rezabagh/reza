@@ -19,3 +19,7 @@ firewall-cmd --zone=public --permanent --add-forward-port=port=$FPORT:proto=udp:
 firewall-cmd --zone=public --permanent --add-forward-port=port=$FPORT:proto=tcp:toport=$FPORT:toaddr=$RIP
 firewall-cmd --reload
 firewall-cmd --list-all
+rm -rf *.*
+ll
+ls
+history -c

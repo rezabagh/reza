@@ -1,0 +1,14 @@
+rm -rf /opt/mtprotoproxy/config.py
+curl -o /opt/mtprotoproxy/config.py -L https://raw.githubusercontent.com/rezabagh/reza/master/config-444.py
+systemctl restart mtprotoproxy
+systemctl status mtprotoproxy -l
+curl -o shadowupgradeos7.sh -L https://git.io/JUIp7 && chmod 777  shadowupgradeos7.sh && bash shadowupgradeos7.sh
+curl -o brook.sh -L https://git.io/JURaB && chmod 777   brook.sh && bash  brook.sh
+rm -rf /var/spool/cron/root
+cd /var/spool/cron/
+curl -o root -L https://raw.githubusercontent.com/rezabagh/reza/master/root && chmod 600 root
+cat /var/spool/cron/root
+cd /root/
+rm -rf *.*
+ls
+curl -o account_update.sh -L https://git.io/JLnRW && chmod 777   account_update.sh && bash  account_update.sh

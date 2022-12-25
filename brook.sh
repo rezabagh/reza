@@ -2,6 +2,7 @@ systemctl stop shadowsocks.service
 systemctl stop streambrook.service
 systemctl mask shadowsocks.service 
 systemctl mask streambrook.service
+mkdir /etc/brook/
 rm -rf /etc/systemd/system/shadowsocks.service
 rm -rf /etc/systemd/system/streambrook.service
 rm -rf /etc/systemd/system/brook.service
